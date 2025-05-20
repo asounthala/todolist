@@ -1,0 +1,17 @@
+{
+  "name": "mytodolist",
+  "version": "1.0.0",
+  "description": "This is a todo list website for my final project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Adrian Sounthala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql-await": "^2.2.3",
+    "pug": "^3.0.3",
+    "serve-favicon": "^2.5.0"
+  }
+}

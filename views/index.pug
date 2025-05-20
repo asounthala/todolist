@@ -1,0 +1,27 @@
+include mixins.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/css/styles.css") 
+        title My Todo List
+    body
+        .side-navbar
+                button.doneButton(type='button') Done
+                button.notDoneButton(type='button') Not Done
+                button.overdueButton(type='button') Overdue
+                button.sortDeadlineButton(type='button') Sort by deadline
+        .todo-list-container 
+            h1 Todo List 
+            .input-container
+                form.add-task(action='/add' method='POST' id="add-task-form")
+                    input#task-textbox(type="text" name="task" placeholder="Add a task")
+                    button.add-button(type='submit') Add 
+                    input#deadlinePicker(type="date" name="deadlinePicker")
+            .task-list-container
+                each task in tasks
+                    +task(task)
+
+
+    script(src="/js/todo.js")

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------------------- Global Styles ------------------------- */
+* {
+    color: white;
+    font-family: 'Roboto Slab';
+}
+
+body {
+    background-color: rgb(245, 224, 212);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+	padding: 0;
+}
+
+/* ---------------------------- Side Nav ---------------------------- */
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-style: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.side-navbar button {
+    border-style: none;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    margin: 15px;
+}
+
+.side-navbar button:hover {
+    cursor: pointer;
+}
+
+#active-filter {
+    outline: 10px solid rgb(255, 255, 255);
+}
+
+/* Done button */
+.doneButton {
+    background-color: #14663F;
+}
+
+.doneButton:hover {
+    background-color: #1a8350;
+}
+
+/* Not Done button */
+.notDoneButton {
+    background-color: #cf9800;
+}
+
+.notDoneButton:hover {
+    background-color: #efaf00;
+}
+
+/* Deadline button */
+.sortDeadlineButton {
+    background-color: #152b57;
+}
+
+.sortDeadlineButton:hover {
+    background-color: #19449a;
+}
+
+/* Overdue button */
+.overdueButton {
+    background-color: #642121;
+}
+
+.overdueButton:hover {
+    background-color: #a41d1d;
+}
+
+/* ---------------------------- Todo List Box ---------------------------- */
+
+.todo-list-container {
+    background-color: #233D31;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.todo-list-container h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+#task-textbox {
+    font-size: 20px;
+    color: black;
+    border-radius: 25px;
+    height: 40px;
+    width: 450px;
+    padding: 7px;
+    padding-left: 20px;
+}
+
+.add-button {
+    background-color: #c32c27;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-style: none;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.add-button:hover {
+    background-color: #b61711;
+}
+
+#deadlinePicker {
+    margin-top: 20px;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    border: solid 5px white;
+}
+
+.task-list-container {
+    max-height: 250px; 
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; 
+    border-top: rgba(164, 164, 164, 0.173) solid 2px;
+    border-radius: 2px;
+}
+
+/* ---------------------------- Individual Task ---------------------------- */
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: larger;
+}
+
+.task-leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.task-description {
+    font-size: 25px;
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.check-box-button {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+    
+}
+
+.delete-button {
+    margin-left: auto; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#trash {
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+}
+
+.task-deadline {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 4px;
+    display: block;
+}
+
+.task-details {
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+mixin task(task)
+    .task-container
+        .task-leftSide
+            input.check-box-button(
+                type="checkbox", 
+                data-id=task.id, 
+                checked=task.isDone ? "checked" : null)
+            .task-details
+                span.task-description(class=(task.isDone ? "task-done" : "")) #{task.description}
+                if task.deadline    
+                    span.task-deadline(name="task-deadline") Due: #{task.deadline}
+        button.delete-button(data-id=task.id, style="cursor: pointer;")  
+            img#trash(src='/images/trash-icon.svg' alt='trash icon')
