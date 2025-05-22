@@ -1,7 +1,8 @@
-# Todo List Website
-- This was a full stack wesbite I made my for my Internet Programming class.
+# Full Stack Todo List Website
+- Final Project for CSCI 4131 (Internet Programming)
 - Tech Stack:
   * Pug
   * CSS
-  * JavaScript (Express.js and Vanilla JavaScript)
+  * JavaScript
+  * Express.js
   * SQL
