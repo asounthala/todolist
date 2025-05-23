@@ -6,9 +6,20 @@
   * JavaScript
   * Express.js
   * SQL
+  * MySQL
 
 <img width="1639" alt="todo list" src="https://github.com/user-attachments/assets/5c00fc06-26e6-4621-b5cf-56effa67e135" />
 
-<br>
-## Adding Tasks: <br>
-![adding-tasks](https://github.com/user-attachments/assets/3e29c30d-bfda-4f11-8c79-9a07d5b00b5c)
+# Adding Tasks: <br>
+
+https://github.com/user-attachments/assets/856aa312-d0c2-4637-8585-31884665229a
+
+# Deleting Tasks: <br>
+
+https://github.com/user-attachments/assets/2c40ff93-55a5-4e5d-b93e-6f509dc08935
+
+# Filtering and Checking Tasks: <br>
+
+https://github.com/user-attachments/assets/5df4be43-9053-4269-bf79-a5e2c8085775
+
+
