@@ -3,9 +3,9 @@ const mysql = require(`mysql-await`);
 var connPool = mysql.createPool({
   connectionLimit: 5, 
   host: "",
-  user: "",
-  database: "",
-  password: "", 
+  user: "{MYSQL USERNAME}",
+  database: "{MYSQL DATABASE NAME},
+  password: "{MYSQL PASSWORD}", 
 });
 
 /* ---------------------------- Add a new task ---------------------------- */
